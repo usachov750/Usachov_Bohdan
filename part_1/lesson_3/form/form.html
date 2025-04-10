@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<fieldset>
+            <legend>Реєстрація</legend>
+            <p>
+                <label>
+                    Ваше ім'я:*
+                    <input type="text" name="name" autofocus>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Телефон:*
+                    <input type="number" name="phone">
+                </label>
+            </p>    
+            <p>
+                <label>
+                    E-mail:*
+                    <input type="email" name="email">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Пароль:*
+                    <input type="password" name="password">
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Підбор рейсу</legend>
+            <p>
+                <label>
+                    Звідки:*
+                    <select name="from_country">
+                        <option value="greece">Афіни</option>
+                        <option value="ukraine">Київ</option>
+                        <option value="turkey">Стамбул</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Куди:*
+                    <select name="to_country">
+                        <option value="greece">Афіни</option>
+                        <option value="ukraine">Київ</option>
+                        <option value="turkey">Стамбул</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Туди:*                   
+                    <input type="date" name="departure_date">                    
+                </label>
+            </p>
+            <p>            
+                <label>
+                    Назад:*
+                    <input type="date" name="return_date">     
+                </label>
+            </p>
+                Кількість квитків:*
+                <input type="number" name="ticket_count">
+            <p>            
+                <label>Діти</label><br>
+                    <label>
+                        <input type="radio" name="child" value="without" checked> Без дітей
+                    </label><br> 
+                    <label>
+                        <input type="radio" name="child" value="1_child"> 1 дитина
+                    </label><br> 
+                    <label>
+                        <input type="radio" name="child" value="2_child"> 2 дитини
+                    </label>
+            </p>
+            <p>            
+                <label>Комфорт</label><br> 
+                    <label>
+                        <input type="checkbox" name="comfort"> Місце для ніг
+                    </label><br> 
+                    <label>
+                        <input type="checkbox" name="comfort"> Харчування
+                    </label><br> 
+                    <label>
+                        <input type="checkbox" name="comfort"> Доп багаж
+                    </label><br> 
+                    <label>
+                        <input type="checkbox" name="comfort"> Місце біля вікна
+                    </label><br> 
+                    <label>
+                        <input type="checkbox" name="comfort">  Місце в першому ряду
+                    </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Інформація про страховку</legend>
+            <p>
+                <label>
+                    <input type="checkbox" name="insurance" checked> Я потребую страхування
+                </label>
+            </p>
+            <p>Завантажте копію паспорта</p>
+            <form>
+                <input type="file" name="file">
+            </form><br>
+            <textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
+        </fieldset><br>
+        <button type="submit">Отримати</button>
+        <button type="submit">Очистити</button>
+	</div>
+</body>
+</html>
