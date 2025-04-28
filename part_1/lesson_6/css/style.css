@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background: #fff;
+    color: #3D3D3D;
+  }
+  
+  .navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    color: #46A358;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #3D3D3D;
+    font-weight: 500;
+  }
+  
+  .nav-links .active {
+    border-bottom: 2px solid #46A358;
+    padding-bottom: 5px;
+  }
+  
+  .login-btn {
+    background: #46A358;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .welcome-text {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #8B8B8B;
+    margin-bottom: 10px;
+  }
+  
+  .headline {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .green {
+    color: #46A358;
+  }
+  
+  .description {
+    color: #727272;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .shop-now {
+    background: #46A358;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hero-image {
+    position: relative; /* Контейнер стає опорою для абсолютного позиціонування */
+  }
+  
+  .image-wrapper {
+    position: relative;
+    width: 507px;
+    height: 450px;
+  }
+  
+  .main-image {
+    width: 507px;
+    height: 450px;
+    object-fit: cover;
+  }
+  
+  .small-image {
+    position: absolute;
+    width: 135px;
+    height: 135px;
+    bottom: 20px; /* Зміщення від нижнього краю */
+    left: 20px;   /* Зміщення від лівого краю */
+    object-fit: cover;
+  }
+  
+  
